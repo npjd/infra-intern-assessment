@@ -57,8 +57,7 @@ func SolveSudoku(grid [][]int) [][]int {
 		return grid
 	}
 
-	for num := 1; num <= 9; num++ 
-	{
+	for num := 1; num <= 9; num++ {
 		if isValid(grid, x, y, num)  {
 			grid[x][y] = num
 			if SolveSudoku(grid) != nil {
